@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>conet | Conectando empresas ao mundo</title>
+  <meta name="description" content="Soluções em infraestrutura de TI, redes, CFTV e otimização de espaços corporativos.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Logo SVG reutilizável -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="conet-mark" viewBox="0 0 48 48">
+    <ellipse cx="24" cy="24" rx="20" ry="9" transform="rotate(-30 24 24)" fill="none" stroke="#6C3CE9" stroke-width="3"/>
+    <path d="M24 24L7 34M24 24L28 41M24 24L41 14" stroke="#06C1D4" stroke-width="2" fill="none"/>
+    <circle cx="7" cy="34" r="3.5" fill="#06C1D4"/>
+    <circle cx="28" cy="41" r="3.5" fill="#06C1D4"/>
+    <circle cx="41" cy="14" r="4" fill="#F59E0B"/>
+    <circle cx="24" cy="24" r="6.5" fill="currentColor"/>
+  </symbol>
+</svg>
+
+<header class="header" id="header">
+  <div class="container header__inner">
+    <a class="logo" href="#inicio" aria-label="conet - início">
+      <svg class="logo__mark" aria-hidden="true"><use href="#conet-mark"/></svg>
+      <span class="logo__text">conet</span>
+    </a>
+    <button class="burger" id="burger" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav" id="nav" aria-label="Principal">
+      <a href="#inicio" class="nav__link">Início</a>
+      <a href="#sobre" class="nav__link">Sobre</a>
+      <a href="#servicos" class="nav__link">Serviços</a>
+      <a href="#diferenciais" class="nav__link">Diferenciais</a>
+      <a href="#contato" class="nav__link">Contato</a>
+      <a href="#contato" class="btn btn--cta nav__cta">Solicitar Orçamento</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <!-- HERO -->
+  <section class="hero" id="inicio">
+    <div class="container hero__inner">
+      <div class="hero__content">
+        <span class="badge">Infraestrutura de TI &amp; Ambientes Inteligentes</span>
+        <h1>Infraestrutura invisível. <span>Ambientes inteligentes.</span></h1>
+        <p>A <strong>conet</strong> conecta redes seguras, cabeamento organizado e espaços de trabalho otimizados para que a sua empresa opere com mais produtividade e menos preocupação.</p>
+        <a href="#contato" class="btn btn--cta">Solicitar Orçamento</a>
+        <a href="#servicos" class="btn btn--ghost">Conhecer serviços</a>
+      </div>
+      <div class="hero__visual" aria-hidden="true">
+        <svg viewBox="0 0 400 400">
+          <g fill="none" stroke="#6C3CE9" stroke-opacity=".35" stroke-width="2">
+            <ellipse cx="200" cy="200" rx="170" ry="70" transform="rotate(-30 200 200)"/>
+            <ellipse cx="200" cy="200" rx="120" ry="45" transform="rotate(25 200 200)" stroke="#06C1D4"/>
+            <circle cx="200" cy="200" r="190" stroke-dasharray="4 8" stroke="#0A3586" stroke-opacity=".2"/>
+          </g>
+          <g stroke="#06C1D4" stroke-width="2" stroke-opacity=".6">
+            <path d="M200 200L60 270M200 200L250 350M200 200L345 115M200 200L110 90"/>
+          </g>
+          <circle class="pulse" cx="60" cy="270" r="12" fill="#06C1D4"/>
+          <circle cx="250" cy="350" r="10" fill="#06C1D4"/>
+          <circle cx="110" cy="90" r="9" fill="#6C3CE9"/>
+          <circle cx="345" cy="115" r="14" fill="#F59E0B"/>
+          <circle cx="200" cy="200" r="26" fill="#0A3586"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOBRE -->
+  <section class="section section--light" id="sobre">
+    <div class="container">
+      <div class="about">
+        <div>
+          <span class="badge">Sobre a conet</span>
+          <h2>Tecnologia que trabalha em silêncio, espaços que trabalham a seu favor</h2>
+        </div>
+        <div class="about__text">
+          <p>Unimos uma infraestrutura de rede organizada e invisível a um layout inteligente de escritórios. Cabos bem planejados, estações ergonômicas e ambientes limpos reduzem falhas, melhoram o conforto da equipe e facilitam a manutenção.</p>
+          <ul class="checks">
+            <li>Cabeamento estruturado e rede corporativa seguros</li>
+            <li>Workstations ergonômicas e organizadas</li>
+            <li>Monitoramento e suporte para o dia a dia da operação</li>
+          </ul>
+        </div>
+      </div>
+
+      <!--
+        ============ EQUIPE ============
+        COMO TROCAR AS FOTOS:
+        1) Salve a foto do participante em assets/equipe/ com o nome indicado abaixo
+           (ex.: assets/equipe/gerente-ti.jpg). Use JPG, de preferência quadrada.
+        2) Troque "Nome do Participante" pelo nome real.
+        Enquanto a foto não existir, aparece um avatar padrão automaticamente.
+      -->
+      <div class="team">
+        <div class="team__head">
+          <span class="badge">Nossa Equipe</span>
+          <h2>Quem faz a conet acontecer</h2>
+        </div>
+        <div class="team__grid">
+          <figure class="member">
+            <div class="member__photo"><img src="assets/equipe/gerente-ti.jpg" alt="Foto do Gerente de TI" loading="lazy" onerror="this.onerror=null;this.src='assets/equipe/avatar-padrao.svg'"></div>
+            <figcaption><h3>Isaac Ramos</h3><p>Gerente de TI</p></figcaption>
+          </figure>
+          <figure class="member">
+            <div class="member__photo"><img src="assets/equipe/gerente-administrativo.jpg" alt="Foto do Gerente Administrativo" loading="lazy" onerror="this.onerror=null;this.src='assets/equipe/avatar-padrao.svg'"></div>
+            <figcaption><h3>Heitor Araújo</h3><p>Gerente Administrativo</p></figcaption>
+          </figure>
+          <figure class="member">
+            <div class="member__photo"><img src="assets/equipe/gerente-comunicacao.jpg" alt="Foto do Gerente de Comunicação" loading="lazy" onerror="this.onerror=null;this.src='assets/equipe/avatar-padrao.svg'"></div>
+            <figcaption><h3>Alexandre Viegas</h3><p>Gerente de Comunicação</p></figcaption>
+          </figure>
+          <figure class="member">
+            <div class="member__photo"><img src="assets/equipe/gerente-materiais.jpg" alt="Foto do Gerente de Materiais" loading="lazy" onerror="this.onerror=null;this.src='assets/equipe/avatar-padrao.svg'"></div>
+            <figcaption><h3>Samuel Lucena</h3><p>Gerente de Materiais</p></figcaption>
+          </figure>
+          <figure class="member">
+            <div class="member__photo"><img src="assets/equipe/gerente-projeto.jpg" alt="Foto do Gerente de Projeto" loading="lazy" onerror="this.onerror=null;this.src='assets/equipe/avatar-padrao.svg'"></div>
+            <figcaption><h3>Marcone Alves</h3><p>Gerente de Projeto</p></figcaption>
+          </figure>
+          <figure class="member">
+            <div class="member__photo"><img src="assets/equipe/gerente-ia.jpg" alt="Foto do Gerente de IA" loading="lazy" onerror="this.onerror=null;this.src='assets/equipe/avatar-padrao.svg'"></div>
+            <figcaption><h3>Hebert Velloso</h3><p>Gerente de IA</p></figcaption>
+          </figure>
+          <figure class="member">
+            <div class="member__photo"><img src="assets/equipe/colaborador.jpg" alt="Foto do Colaborador" loading="lazy" onerror="this.onerror=null;this.src='assets/equipe/avatar-padrao.svg'"></div>
+            <figcaption><h3>Lucas Balmant</h3><p>Colaborador</p></figcaption>
+          </figure>
+          <figure class="member">
+            <div class="member__photo"><img src="assets/equipe/lider.jpg" alt="Foto do Líder" loading="lazy" onerror="this.onerror=null;this.src='assets/equipe/avatar-padrao.svg'"></div>
+            <figcaption><h3>Kaique Guedes</h3><p>Líder</p></figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVIÇOS -->
+  <section class="section" id="servicos">
+    <div class="container">
+      <div class="section__head">
+        <span class="badge">Serviços</span>
+        <h2>Soluções completas para o seu ambiente corporativo</h2>
+      </div>
+      <div class="grid grid--4">
+        <article class="card">
+          <div class="icon"><svg viewBox="0 0 24 24"><path d="M14.7 6.3a4 4 0 0 0-5 5L3 18l3 3 6.7-6.7a4 4 0 0 0 5-5l-2.5 2.5-2.4-.6-.6-2.4z"/></svg></div>
+          <h3>Manutenção</h3>
+          <p>Manutenção preventiva e corretiva para manter seus sistemas sempre operacionais.</p>
+        </article>
+        <article class="card">
+          <div class="icon icon--accent"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/></svg></div>
+          <h3>Workstations &amp; Otimização de Espaços</h3>
+          <p>Ambientes de trabalho ergonômicos, organizados e otimizados para máxima produtividade e conforto.</p>
+        </article>
+        <article class="card">
+          <div class="icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="5" r="2"/><circle cx="5" cy="19" r="2"/><circle cx="19" cy="19" r="2"/><path d="M12 7v4M12 11l-6 6M12 11l6 6"/></svg></div>
+          <h3>Infraestrutura</h3>
+          <p>Soluções robustas e seguras de cabeamento estruturado e redes corporativas.</p>
+        </article>
+        <article class="card">
+          <div class="icon icon--accent"><svg viewBox="0 0 24 24"><path d="M3 8l12-3 2 6-12 3z"/><path d="M17 9l4-1M10 14v4M7 20h6"/></svg></div>
+          <h3>Sistemas de CFTV</h3>
+          <p>Segurança e monitoramento contínuo para proteger seu patrimônio e equipe.</p>
+        </article>
+      </div>
+
+      <div class="gallery" aria-label="Nosso trabalho em campo">
+        <figure class="gallery__item gallery__item--tall">
+          <img src="assets/servico-manutencao-cftv.jpg" alt="Técnico da conet manuseando monitor e câmera de segurança durante manutenção" loading="lazy">
+          <figcaption>Manutenção e instalação de equipamentos</figcaption>
+        </figure>
+        <figure class="gallery__item">
+          <img src="assets/servico-rede-rack.jpg" alt="Rack de rede com patch panel C5e, switches e roteadores organizados" loading="lazy">
+          <figcaption>Infraestrutura: rack e cabeamento estruturado</figcaption>
+        </figure>
+        <figure class="gallery__item">
+          <img src="assets/servico-cftv.jpg" alt="Sistema de CFTV com gravador, fonte, câmera e monitor em rack" loading="lazy">
+          <figcaption>Sistemas de CFTV</figcaption>
+        </figure>
+        <figure class="gallery__item">
+          <img src="assets/servico-diagnostico-pc.jpg" alt="Tela de diagnóstico de um computador HP durante manutenção" loading="lazy">
+          <figcaption>Diagnóstico e manutenção de computadores</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- DIFERENCIAIS -->
+  <section class="section section--light" id="diferenciais">
+    <div class="container">
+      <div class="section__head">
+        <span class="badge">Nossos Diferenciais</span>
+        <h2>Por que escolher a conet</h2>
+      </div>
+      <div class="grid grid--3">
+        <article class="feature">
+          <span class="feature__num">01</span>
+          <h3>Profissionalismo</h3>
+          <p>Nossa equipe é altamente qualificada e dedicada a entregar os melhores resultados em cada projeto.</p>
+        </article>
+        <article class="feature">
+          <span class="feature__num">02</span>
+          <h3>Eficiência</h3>
+          <p>Trabalhamos de forma ágil e organizada para solucionar seus problemas e otimizar seus sistemas.</p>
+        </article>
+        <article class="feature">
+          <span class="feature__num">03</span>
+          <h3>Suporte Contínuo</h3>
+          <p>Oferecemos suporte técnico para garantir que sua infraestrutura funcione perfeitamente 24/7.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section class="section" id="contato">
+    <div class="container contact">
+      <div>
+        <span class="badge">Contato</span>
+        <h2>Vamos conectar a sua empresa?</h2>
+        <p class="muted">Conte-nos sobre o seu ambiente e receba uma proposta sob medida.</p>
+      </div>
+      <form class="form" id="contact-form" novalidate>
+        <div class="field">
+          <label for="nome">Nome</label>
+          <input type="text" id="nome" name="nome" autocomplete="name" required>
+          <small class="error" aria-live="polite"></small>
+        </div>
+        <div class="field">
+          <label for="empresa">Empresa</label>
+          <input type="text" id="empresa" name="empresa" autocomplete="organization" required>
+          <small class="error" aria-live="polite"></small>
+        </div>
+        <div class="field">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" autocomplete="email" required>
+          <small class="error" aria-live="polite"></small>
+        </div>
+        <div class="field">
+          <label for="servico">Serviço de interesse</label>
+          <select id="servico" name="servico" required>
+            <option value="">Selecione...</option>
+            <option>Manutenção</option>
+            <option>Workstations &amp; Otimização de Espaços</option>
+            <option>Infraestrutura</option>
+            <option>Sistemas de CFTV</option>
+          </select>
+          <small class="error" aria-live="polite"></small>
+        </div>
+        <div class="field">
+          <label for="mensagem">Mensagem</label>
+          <textarea id="mensagem" name="mensagem" rows="4" required minlength="10"></textarea>
+          <small class="error" aria-live="polite"></small>
+        </div>
+        <button type="submit" class="btn btn--cta btn--block">Enviar mensagem</button>
+        <div class="success" id="success" role="status" hidden>
+          <strong>Mensagem enviada com sucesso!</strong>
+          <span>Em breve a equipe da conet entrará em contato.</span>
+        </div>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container footer__inner">
+    <div>
+      <a class="logo logo--light" href="#inicio" aria-label="conet - início">
+        <svg class="logo__mark" aria-hidden="true"><use href="#conet-mark"/></svg>
+        <span class="logo__text">conet</span>
+      </a>
+      <p class="footer__slogan">Conectando empresas ao mundo</p>
+    </div>
+    <nav class="footer__links" aria-label="Links rápidos">
+      <a href="#sobre">Sobre</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#diferenciais">Diferenciais</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </div>
+  <p class="footer__copy">© <span id="year">2026</span> conet. Todos os direitos reservados.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
